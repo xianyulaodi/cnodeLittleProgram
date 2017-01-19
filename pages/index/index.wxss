@@ -1,0 +1,49 @@
+
+.nav-name{
+    display:inline-block;
+    margin:0 5px;
+    font-size:16px;
+    color: #2b2e33;
+    border-bottom: 2px solid transparent;
+    padding:10px;
+}
+
+.nav-hover{
+    color: #f06000;
+    border-bottom: 2px solid #f06000;
+}
+
+.title{
+    position:absolute;
+    bottom:0;
+    left:0;
+    color:#fff;
+    font-size:12px;
+    background-color:rgba(0,0,0,0.6);
+    padding:5px;
+    width:100%;
+}
+
+
+.image-item{
+    width:38px;
+    height:38px;
+    margin: 0 4px;
+    float: left;
+}
+
+.mod-item{
+    overflow: hidden;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    line-height: 50px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+
+
+
+
+
+

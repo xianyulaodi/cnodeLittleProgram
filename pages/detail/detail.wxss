@@ -1,0 +1,21 @@
+@import "../../wxParse/wxParse.wxss";
+
+text{
+	display: block;
+	padding-left: 10px;
+}
+.title{
+	color: #000;
+	text-align: left;
+	font-size: 16px;
+	padding: 10px;
+}
+.author,
+.publishTime,
+.visitCount{
+	font-size: 12px;
+	color: #333;
+}
+.visitCount{
+	margin-bottom: 10px;
+}

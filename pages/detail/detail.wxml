@@ -1,0 +1,15 @@
+<import src="../../wxParse/wxParse.wxml"/> 
+
+<view>
+
+    <view>
+        <text class="title">{{data.title}}</text>
+        <text class="author">作者：{{data.author.loginname}}</text>
+        <text class="publishTime">发布于：{{data.create_at}}</text>
+        <text class="visitCount">{{data.visit_count}}次浏览</text>
+    </view>
+    <!-- 用来解析html -->
+    <view class="wxParse">
+       <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+    </view>
+</view>

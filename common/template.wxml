@@ -1,0 +1,20 @@
+<!-- loading模板  -->
+<template name="loadings">
+    <view class="tips {{loading ? 'hide': ''}}">
+        <image src="../../image/loading.gif" mode="aspectFit" />
+        <text>{{loadtxt}}...</text>
+    </view>
+    <loading hidden="{{loading}}">
+        {{loadtxt}}...
+    </loading>
+</template>
+
+<!-- 
+小程序开发Q&A（欢迎开发者在文章下留言，我们一起维护这个Q&A）
+https://zhuanlan.zhihu.com/p/24554026
+ -->
+<!-- A：（问题的提出和整理来自知乎ID：顽主）出现类似的这种错误，通常是由于图片的路径不对而引起的。外网的图片，我们这里不再说了，因为没有相对和绝对的路径概念，如果报错了就是你外网的图片url错了。我们说说本地的图片路径问题。请注意，如果图片路径被写在一个js文件A里，而B引用了这个js文件，那么图片的路径必须是相对于B的相对路径。所以，最好在公共的js文件里使用绝对路径。
+
+
+
+

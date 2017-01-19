@@ -1,0 +1,22 @@
+{
+  "name": "cnode",
+  "version": "1.0.0",
+  "description": "cnode little program",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xianyulaodi/cnodeLittleProgram"
+  },
+  "author": "xianyulaodi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xianyulaodi/cnodeLittleProgram/issues"
+  },
+  "homepage": "https://github.com/xianyulaodi/cnodeLittleProgram#readme",
+  "devDependencies": {
+    "es6-promise": "^4.0.5"
+  }
+}

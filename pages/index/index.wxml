@@ -1,0 +1,21 @@
+<import src="../../common/template.wxml"/>
+
+<view class="index">
+    <view class="nav-scroll">
+        <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+            <text wx:for="{{section}}" wx:key="tab" id="{{item.tab}}" catchtap="handleTap" class="nav-name {{item.tab == currentTab ? 'nav-hover' : ''}}">{{item.name}}</text>
+        </scroll-view>
+    </view>
+
+    <view class="mod-item" wx:for="{{dataList}}" wx:key="{{index}}">
+        <image src="{{item.author.avatar_url}}" class="image-item"></image>
+        <view class="text" catchtap="goToDetail" id="{{item.id}}" >{{item.title}}</view> 
+        <!-- 下面的写法也可以跳转到详情页：
+         <navigator class="text" url="../detail/detail?id={{item.id}}" open-type="navigate" hover-class="other-navigator-hover">
+        {{item.title}}
+        </navigator> -->
+    </view>
+
+    <template is="loadings" data="{{loading,loadtxt}}" />
+    
+</view>
